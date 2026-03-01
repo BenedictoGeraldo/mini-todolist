@@ -8,7 +8,7 @@ export default function TodoList() {
   return (
     <>
       <div className="flex flex-col gap-2 flex-1">
-        {todos.length === 0 && (
+        {!todos.length && (
           <p className="text-gray-400 text-lg">
             Belum ada tugas. Tambahkan tugasmu sekarang!
           </p>
