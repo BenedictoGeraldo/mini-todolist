@@ -1,9 +1,10 @@
 "use client";
 
 import { useTodoStore } from "@/store/todoStore";
+import TodoItem from "./todoItem";
 
 export default function TodoList() {
-  const { todos, deleteTodo, toggleTodo } = useTodoStore();
+  const todos = useTodoStore((state) => state.todos);
 
   return (
     <>
@@ -13,29 +14,8 @@ export default function TodoList() {
             Belum ada tugas. Tambahkan tugasmu sekarang!
           </p>
         )}
-        {todos.map((todo) => (
-          <div
-            key={todo.id}
-            className="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
-          >
-            <input
-              type="checkbox"
-              checked={todo.isDone}
-              onChange={() => toggleTodo(todo.id)}
-              className="w-4 h-4 cursor-pointer"
-            />
-            <span
-              className={`flex-1 text-sm ${todo.isDone ? "line-through text0gray-400" : ""}`}
-            >
-              {todo.text}
-            </span>
-            <button
-              onClick={() => deleteTodo(todo.id)}
-              className="text-gray-400 hover:text-red-500 text-sm transition-colors"
-            >
-              Hapus
-            </button>
-          </div>
+        {todos.map((item) => (
+          <TodoItem key={item.id} todo={item} />
         ))}
       </div>
 
