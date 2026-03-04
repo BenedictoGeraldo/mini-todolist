@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Can Do",
-  description: "Simple to do list with AI Powered",
+  description: "Simple todo list with AI powered",
 };
 
 export default function RootLayout({
