@@ -31,7 +31,7 @@ export default function AiInsight() {
         </p>
       )}
 
-      {errorInsight && <p className="text-red-400 text-sm">{errorInsight}</p>}
+      {errorInsight && <p className="text-red-500 text-sm">{errorInsight}</p>}
 
       {insight && !isLoadingInsight && (
         <p className="text-white text-sm leading-relaxed">
