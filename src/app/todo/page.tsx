@@ -28,6 +28,18 @@ export default function TodoPage() {
 
       <TodoInput />
       <TodoList />
+
+      <footer className="mt-auto pt-10 pb-4 flex items-center justify-center gap-1.5 text-[11px] tracking-wide text-white/20 whitespace-nowrap">
+        <span>Built by</span>
+        <a
+          href="https://benedicto-geraldo.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/40 hover:text-white/70 underline underline-offset-2 decoration-white/20 hover:decoration-white/50 transition-colors duration-300"
+        >
+          Benedicto Geraldo
+        </a>
+      </footer>
     </div>
   );
 }
