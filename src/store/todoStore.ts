@@ -68,7 +68,7 @@ export const useTodoStore = create<TodoStore>()(
         }
 
         const currentCount = get().insightCount;
-        if (currentCount >= 2) {
+        if (currentCount >= 3) {
           set({
             errorInsight:
               "Batas generate insight sudah tercapai. Coba lagi besok!",
