@@ -1,6 +1,7 @@
 "use client";
 
 import { useTodoStore } from "@/store/todoStore";
+import AiInsight from "./aiInsight";
 import TodoItem from "./todoItem";
 
 export default function TodoList() {
@@ -19,18 +20,7 @@ export default function TodoList() {
         ))}
       </div>
 
-      <div className="mt-8 border border-gray-200 rounded p-6">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-medium">AI Insight</h2>
-          <button className="bg-black text-white px-4 py-2 rounded-md text-xs hover:bg-gray-800 transition-colors">
-            Generate Insight
-          </button>
-        </div>
-
-        <p className="text-gray-400 text-sm">
-          Terima saran otomatis dari AI untuk membantu kamu lebih produktif!
-        </p>
-      </div>
+      <AiInsight />
     </>
   );
 }
