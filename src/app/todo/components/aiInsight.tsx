@@ -21,7 +21,7 @@ export default function AiInsight() {
             />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-white/25" />
           </span>
-          <h2 className="text-[11px] uppercase tracking-[0.2em] text-white/40">
+          <h2 className="text-[11px] uppercase tracking-[0.2em] text-white/60">
             AI Insight
           </h2>
         </div>
@@ -35,7 +35,7 @@ export default function AiInsight() {
       </div>
 
       {!insight && !isLoadingInsight && !errorInsight && (
-        <p className="text-white/20 text-sm tracking-wide">
+        <p className="text-white/40 text-sm tracking-wide">
           Minta AI untuk memberikan saran tentang tugas-tugasmu dengan klik
           Generate. Maksimal 3 insight perhari!
         </p>

@@ -26,12 +26,11 @@ export default function TodoList() {
         )}
 
         {!todos.length && (
-          <p className="text-white/20 text-sm tracking-wide py-6">
+          <p className="text-white/35 text-sm tracking-wide py-6">
             Belum ada tugas. Tambahkan tugas diatas
           </p>
         )}
 
-        {/* Task items */}
         <div>
           {todos.map((item) => (
             <TodoItem key={item.id} todo={item} />
