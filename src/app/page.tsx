@@ -18,11 +18,11 @@ export default function Home() {
         className="absolute top-7 left-7 flex flex-col gap-1"
         style={{ animation: "fadeIn 1s ease both", animationDelay: "1.3s" }}
       >
-        <div className="w-6 h-px bg-white/25" />
-        <div className="w-3 h-px bg-white/15" />
+        <div className="w-6 h-px bg-white/70" />
+        <div className="w-3 h-px bg-white/70" />
       </div>
       <div
-        className="absolute bottom-7 right-8 text-white/20 text-[10px] tracking-[0.25em] uppercase"
+        className="absolute bottom-7 right-8 text-white/70 text-[10px] tracking-[0.25em] uppercase"
         style={{ animation: "fadeIn 1s ease both", animationDelay: "1.3s" }}
       >
         2026
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <div
-          className="w-28 h-px bg-white/20 origin-left"
+          className="w-28 h-px bg-white/70 origin-left"
           style={{
             animation: "lineGrow 0.7s cubic-bezier(0.16, 1, 0.3, 1) both",
             animationDelay: "0.55s",
@@ -42,7 +42,7 @@ export default function Home() {
         />
 
         <p
-          className="text-white/40 text-sm md:text-base tracking-wide leading-relaxed max-w-[18rem] md:max-w-xs"
+          className="text-white/50 text-sm md:text-base tracking-wide leading-relaxed max-w-[18rem] md:max-w-xs"
           style={{
             animation: "fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both",
             animationDelay: "0.65s",

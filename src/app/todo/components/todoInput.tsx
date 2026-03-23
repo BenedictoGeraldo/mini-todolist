@@ -32,15 +32,15 @@ export default function TodoInput() {
           }}
           onKeyDown={(e) => e.key === "Enter" && handleAdd()}
           placeholder="Tambahkan tugas baru..."
-          className={`flex-1 bg-transparent border-b py-3 text-sm text-white placeholder-white/20 outline-none transition-colors duration-300 ${
+          className={`flex-1 bg-transparent border-b py-3 text-sm text-white placeholder-white/40 outline-none transition-colors duration-300 ${
             error
               ? "border-red-500/60"
-              : "border-white/15 focus:border-white/50"
+              : "border-white/25 focus:border-white/50"
           }`}
         />
         <button
           onClick={handleAdd}
-          className="group relative overflow-hidden border border-white/20 hover:border-white/50 px-6 py-2.5 rounded-2xl flex items-center justify-center text-[9px] md:text-[11px] uppercase tracking-[0.2em] text-white/50 hover:text-white transition-colors duration-300"
+          className="group relative overflow-hidden border border-white/20 hover:border-white/50 px-6 py-2.5 rounded-2xl flex items-center justify-center text-[9px] md:text-[11px] uppercase tracking-[0.2em] text-white/80 hover:text-white transition-colors duration-300"
         >
           Simpan
         </button>
