@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="relative h-screen bg-[#080808] overflow-hidden flex flex-col items-center justify-center">
       <div
-        className="absolute top-1/2 left-1/2 w-[700px] h-[500px] rounded-full pointer-events-none"
+        className="absolute top-1/2 left-1/2 w-175 h-125 rounded-full pointer-events-none"
         style={{
           background:
             "radial-gradient(ellipse, rgba(255,255,255,0.07) 0%, transparent 70%)",
@@ -83,7 +83,7 @@ export default function Home() {
         style={{ animation: "fadeIn 1s ease both", animationDelay: "1.5s" }}
       >
         <div
-          className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent"
+          className="w-px h-8 bg-linear-to-b from-white/30 to-transparent"
           style={{
             animation: "tickDown 2s ease-in-out infinite",
             animationDelay: "1.6s",
